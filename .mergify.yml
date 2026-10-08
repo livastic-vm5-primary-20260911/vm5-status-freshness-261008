@@ -1,0 +1,7 @@
+pull_request_rules:
+  - name: latest status freshness canary
+    conditions:
+      - check-success = vm5-freshness-status-261008
+    actions:
+      comment:
+        message: VM5_STATUS_FRESHNESS_MATCHED_261008
